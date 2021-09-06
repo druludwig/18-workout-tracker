@@ -12,12 +12,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/workout_db',
+  process.env.MONGODB_URI || 'mongodb://localhost/workout',
   {
+    useFindAndModify: false,
     useNewUrlParser: true,
-    useUnifiedTopology: true,
     useCreateIndex: true,
-    useFindAndModify: false
+    useUnifiedTopology: true
   }
 );
 
