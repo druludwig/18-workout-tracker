@@ -14,12 +14,12 @@ app.use(express.json());
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/workout',
   {
-    useFindAndModify: false,
     useNewUrlParser: true,
+    useUnifiedTopology: true,
     useCreateIndex: true,
-    useUnifiedTopology: true
+    useFindAndModify: false
   }
 );
 
-// Start Server
+// Start
 app.listen(PORT, function () { console.log(`Server running on Port ${PORT}!`) });
