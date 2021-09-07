@@ -1,7 +1,7 @@
 {
   "name": "mongoose_skeleton",
   "version": "1.0.0",
-  "description": "",
+  "description": "An example of a deployed MongoDB",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,8 +9,8 @@
     "watch": "nodemon server.js",
     "seed": "node seeds/seed.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Dru Ludwig",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.16.3",

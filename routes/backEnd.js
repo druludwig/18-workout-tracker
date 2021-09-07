@@ -12,7 +12,6 @@ router.get("/api/workouts", (req, res) => {
     });
 });
 
-
 //Create NEW Workout
 router.post("/api/workouts", ({ body }, res) => {
   db.Workout.create(body).then((WorkoutEvent => {
@@ -43,4 +42,5 @@ router.put("/api/workouts/:id", (req, res) => {
       res.json(err);
     });
 });
+
 module.exports = router
